@@ -23,6 +23,7 @@ and the data in it is a variable name and the data you want to put it in.
 The syntax is as follows:
 '''
 
+# Variable definition example
 variableName = 200;
 
 '''
@@ -75,7 +76,7 @@ Here is an example of just that:
 # printed out for the user to see. Think of it as a prompt.
 userInput = input("Please enter something: ")
 
-# At this point, there is the user's input stored in the userInput function, so let's print it out
+# At this point, there is the user's input stored in the userInput variable, so let's print it out
 # using some fancier methods with the print function
 print("You typed:", userInput)
 
@@ -91,13 +92,14 @@ to combine a string literal with a variable containing a string. Try to practice
 
 You can have as many print and input functions as you would like.
 
-Alright, now to get into something a bit more intense. Arrays, or as Python call them: "lists".
+Alright, now to get into something a bit more intense: Arrays, or as Python calls them: "lists".
 Lists can be viewed as a 'list' of data held under one variable. Lists are useful for many things
 like: holding student grades, friend's names, a list of food you like etc. The syntax takes a little
-getting used to, but with practice they will come easy to you. Below I will define a basic list
-holding a few different numbers.
+getting used to, but with practice it will become second nature to you. Below I will define a basic
+list holding a few different numbers.
 '''
 
+# List syntax example
 someNumbers = [10, 20, 4, 12]
 
 '''
@@ -105,7 +107,7 @@ As you can see, I used square brackets on either side, and seperated each piece 
 So now you might be asking: "How can we access this data?" or "Are we able to change this data like other
 variables?".
 
-To answer the first question: we can access each individual portion of the list using something called an
+To answer thos questions: we can access each individual portion of the list using something called an
 index. On a basic list, each item in the list has an index that uses integers. So what index would you use
 access the first element in the list? If you guessed 1, then you're close, but it's actually 0! Many
 coding languages follow this practice, so it's something you will get used to. This also means that even
@@ -143,6 +145,7 @@ sensitive)
 To define a boolean in a variable, the syntax is the same as above:
 '''
 
+# Boolean literal example
 pythonIsFun = True
 
 # They can be printed, too:
@@ -153,7 +156,7 @@ print(pythonIsFun)
 '''
 This is not the only way to define booleans, however. They are more commonly produced
 through something called a "boolean expression" which is basically a set of logic that
-the computer interprets and spits out a true of false for evaluation. These expressions
+the computer interprets and spits out a true or false for evaluation. These expressions
 can be very sort, or unpleasantly long. I am going to type a few boolean expressions below
 and print their results. I am also going to express a practice where you can reassign variables
 too. (Not that big of a deal, but it might be clarifying for some)
@@ -207,7 +210,7 @@ print(myExpression)
 Now, when I mentioned substitution, that is just my way of 'solving' boolean expressions
 without the help of a computer. As aforementioned, these expressions can get horribly long,
 so that method helps me from having computation errors. Also keep in mind that they usually
-won't say True of False! ;)
+won't say True of False. ;)
 
 Onto what you have all been waiting for.. Looping! The reason I brought up boolean expressions
 so abruptly is because we use them to control how our loops behave. Starting with one of the simplest
@@ -242,9 +245,10 @@ A sentinal is one way to control how your loop.. Loops. Its job is to be updated
 the loop, and the boolean expression that controls the loop should coincide with it.
 
 I used a sentinal value by incrementing it by one each time the loop executes and checking to see if the
-value of less than or equal to 5. If I increase or decrease that number, then the loop will count will
-change. Now, don't think that this is the way you should do every loop. Python gives the programmer
-a generous amount of freedom in the way that they write their boolean expressions, so have fun with it!
+value is less than or equal to 5. If I increase or decrease that number, then the amount of times
+it loopss will change. Now, don't think that this is the way you should do every loop. Python gives the
+programmer a generous amount of freedom in the way that they write their boolean expressions,
+so have fun with it!
 
 As for the += operator, that is basically another way of writing:
 sentinalValue = sentinalValue + 1
@@ -254,7 +258,7 @@ Well, it doesn't change here. Whatever value is stored in sentinalValue is havin
 stored back in sentinalValue. Weird, right? It is something you will see frequently.
 
 Lastly, this is an important note that will apply to loops, and the next item I'm about to show you:
-identing. Look back up to the while loop, drag your mouse over the empty space infront of print() 
+indenting. Look back up to the while loop, drag your mouse over the empty space infront of print() 
 and sentinalValue statements. It's spaces, not tabs! This is more important than it looks, and it 
 is one of the major things (syntax wise) that sets Python apart from languages like C or Java.
 Instead of using brackets to specify the size of the loop body, you must indent each line consistenly.
@@ -263,10 +267,10 @@ Now, if you're thinking you can skip this step, I have some bad news for you. Th
 will not be able to execute your program if it encounters what it calls an "indentation error", so
 make sure your indentation is consistent, and you're not using tabs.
 
-Another issue about indentation errors is that they might not necessarily be a syntax error, so the
-program will seem to run like normal, but encounter what we call a 'logic error'.
+Another issue about indentation is that it might not necessarily case a syntax error, so the
+program will seem to run like normal, but it encounters what we call a 'logic error'.
 
-here is an example (I am typing it in a note because it is an infinite loop if I ran it!):
+here is an example (I am typing it in a note because it is an infinite loop!):
 
 sentinalValue = 1
 
@@ -291,7 +295,7 @@ one:
 uInput = input("Please enter a number between 1 and 10: ")
 
 # 'Convert' the string input into a number
-# keep in mind that this will error out if they user enters something
+# keep in mind that this will error out if the user enters something
 # that isn't a number. Preventing that is not difficult, but is outside
 # the scope of this lecture
 uInput = int(uInput)
